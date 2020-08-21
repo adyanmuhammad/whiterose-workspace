@@ -1,0 +1,65 @@
+<!-- Character Encoding -->
+<meta charset="utf-8">
+
+<!-- Required For Responsiveness -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SEO Stuff -->
+{%- if page.layout = post -%}
+<meta name="description" content="{{- page.excerpt -}}">
+{%- else -%}
+<meta name="description" content="{{- site.description -}}">
+{%- endif -%}
+
+<!-- Open Graph, For Better Social Media Share -->
+<meta property="og:title" content="{{- page.title -}}">
+{%- if page.layout = post -%}
+<meta property="og:type" content="article">
+{%- else -%}
+<meta property="og:type" content="website">
+{%- endif -%}
+<meta property="og:url" content="{{- page.url -}}">
+<meta property="og:image" content="{{- page.image -}}">
+
+<!-- Better Crawling and Indexing -->
+<link rel="canonical" href="{{- page.url -}}">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" href="icon.png">
+
+<!-- CSSes -->
+<link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+<!-- Schema Markup -->
+{%- if page.layout = post -%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{- page.title -}}",
+    "image": "{{- page.image -}}",  
+    "author": {
+      "@type": "Organization",
+      "name": "{{- site.title -}}"
+    },  
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{- site.title -}}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{- "icon.png" | relative_url -}}"
+      }
+    },
+    "datePublished": "{{- page.date -}}"
+  }
+</script>
+{%- else -%}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "{{- page.title -}}",
+    "url": "{{- page.url -}}",
+  }
+</script>
+{%- endif -%}
