@@ -1,0 +1,118 @@
+<header class="site-header header-style-1">
+
+  <div class="top-bar bg-gray">
+      <div class="container">
+        <div class="row">
+            <div class="mt-topbar-left clearfix">
+              <ul class="list-unstyled e-p-bx pull-right">
+                  <li><i class="fa fa-envelope"></i>{{ site.mail }}</li>
+                  <li><i class="fa fa-phone"></i>(078)-567-217-38</li>
+              </ul>
+            </div>
+            <div class="mt-topbar-right clearfix">
+              <div class="appint-btn"><a href="{{ "/contact/" | relative_url }}" class="site-button">Make an Appointment</a></div>
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="sticky-header main-bar-wraper">
+
+    <div class="main-bar bg-white">
+      <div class="container">
+
+          <!-- <div class="logo-header">
+            <div class="logo-header-inner logo-header-one">
+              <a href="index.html">
+                <img src="{{ "/assets/images/favicon/android-icon-36x36.png" | relative_url }}" alt="{{ site.title }}">
+              </a>
+              <span 
+                class="text-uppercase"
+                style="
+                      display: block;
+                      font-size: 16px;
+                      "
+              >
+                {{ site.title }}
+              </span>
+            </div>
+          </div> -->
+
+          <div
+            class="logo-header"
+            style="
+                  display: flex;
+                  justify-content: start;
+                  align-items: center;
+                  width: 270px;
+                  font-size: 16px;
+                  "
+          >
+            <a 
+              href="{{ "/" | relative_url }}"
+              style="
+                    margin-right: 1rem;
+                    "
+            >
+              <img src="{{ "/assets/images/favicon/favicon-16x16.png" | relative_url }}" alt="{{ site.title }}">
+            </a>
+            <span 
+              class="text-uppercase"
+              style="
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: black;
+                    "
+            >
+              {{ site.title }}
+            </span>
+
+          </div>
+
+          <style>
+            .navbar-toggle {
+              padding: 16px;
+              background-color: cornsilk;
+            }
+            .sub-menu li a {
+              text-transform: uppercase;
+              font-weight: bold;
+            }
+          </style>
+
+          <button data-target=".header-nav" data-toggle="collapse" type="button" class="navbar-toggle collapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          
+          <div class="header-nav navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="{{ "/" | relative_url }}">Home</a>
+              </li>
+              <li>
+                <a href="{{ "/about/" | relative_url }}">About Us</a>
+              </li>
+              <li>
+                <a>Services</a>
+                <ul class="sub-menu"> 
+                  {% for service in site.data.services %}
+                  <li>
+                    <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              <li>
+                <a href="{{ "/contact/" | relative_url }}">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+  </div>
+
+</header>

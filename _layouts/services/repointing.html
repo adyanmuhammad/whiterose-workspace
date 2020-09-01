@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% include within-head.html %}
+
+<title>{{- page.title -}}</title>
+
+<!-- SEO Stuff -->
+<meta name="description" content="">
+
+</head>
+<body>
+
+<div class="page-wrapper">
+  {% include header.html %}
+  <style>
+    .svg-background {
+      background-color: #ee5522;
+      background-image: url("https://source.unsplash.com/mvLyHPRGLCs/1600x900");
+    }
+  </style>
+  <div 
+    class="mt-bnr-inr overlay-wraper bg-parallax bg-top-center svg-background"  
+    data-stellar-background-ratio="0.5"
+  >
+    <div class="overlay-main bg-black opacity-07"></div>
+      <div class="container">
+          <div class="mt-bnr-inr-entry">
+            <div class="banner-title-outer">
+                <div class="banner-title-name">
+                  <h2 class="m-b0">Repointing Services Within Your City</h2>
+                  </div>
+              </div>
+              <div>
+                  <ul class="mt-breadcrumb breadcrumb-style-2">
+                      <li><a href="{{ "/" | relative_url }}">Home</a></li>
+                      <li>Repointing Services Within Your City</li>
+                  </ul>
+              </div>                       
+          </div>
+      </div>
+  </div>
+    <div class="top-bar bg-gray">
+      <div class="container">
+        <div class="row" style="padding: 2rem 0;">
+            <div class="mt-topbar-left clearfix">
+              <div class="appint-btn">
+                <a href="{{ "/contact/" | relative_url }}" class="site-button">Make an Appointment</a>
+              </div>
+            </div>
+            <div class="mt-topbar-right clearfix">
+              <div class="appint-btn">
+                <a href="{{ "/contact/" | relative_url }}" class="site-button">Make an Appointment</a>
+              </div>
+            </div>
+        </div>
+      </div>
+  </div>
+  <div class="page-content">
+    <div class="section-full">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-9 col-lg-8">
+
+            <h1>
+              Repointing Services: Neque porro quisquam est qui
+            </h1>
+
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non odio ullamcorper, dignissim ante sed, molestie eros. Sed hendrerit molestie ante. Morbi ullamcorper nunc sit amet lacus sodales, et mattis orci ultrices.
+            </p>
+
+            <p>
+              Nulla at augue scelerisque, consequat mauris in, pharetra arcu. Praesent sed nisi vel leo dapibus venenatis. Integer feugiat mi massa, vel varius magna efficitur id. Aenean sodales neque et massa auctor maximus. Quisque lacinia lorem in enim cursus, eget vestibulum diam iaculis.
+            </p>
+
+            <img 
+              class="img-responsive"
+              {%- 
+                assign service__image = site.data.services[0].title 
+                | prepend: "/assets/images/services/" 
+                | append: ".webp" 
+              %}
+              src="{{ service__image | relative_url }}" 
+              alt="{{ site.data.services[0].title | capitalize }}"
+              style="margin-bottom: 2rem;"
+            >
+
+            <p>
+              Aenean interdum, dolor eget venenatis hendrerit, risus mi convallis mauris, in tempor turpis mauris non metus. Nullam viverra a libero ut pellentesque. Duis massa purus, interdum non sem in, hendrerit pellentesque magna. Vivamus sed accumsan ligula, vel tincidunt dolor. Nullam non varius mi. Nunc ac erat enim. Phasellus pellentesque tortor nisi, sed mattis eros pretium id. Curabitur tincidunt egestas viverra. Suspendisse semper nibh ut ipsum aliquet, eget accumsan mauris sagittis. In varius vel mauris porttitor elementum. Etiam iaculis risus in leo malesuada facilisis.
+            </p>
+
+            <p>
+              Sed mattis libero lorem, ut dapibus dui pretium malesuada. Nunc sit amet gravida est, egestas interdum lorem. Etiam eget commodo purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam consectetur dui sed lorem tincidunt, et consectetur elit mattis. Ut scelerisque rutrum porttitor. Donec vitae magna rhoncus sem blandit ornare. Etiam a purus vitae enim imperdiet auctor. Nulla maximus facilisis ligula, vitae lacinia sapien consequat quis. Aliquam lobortis, lacus ut blandit pulvinar, ex nulla tempus nisi, id aliquam nunc tellus quis nisi. Duis ut ante facilisis, pharetra ante eget, tempor purus.
+            </p>
+
+            <style>
+              .col-sm-row-lg {
+                display: flex;
+                flex-direction: column;
+              }
+              @media (min-width: 960px) {
+                .col-sm-row-lg {
+                  display: flex;
+                  flex-direction: row;
+                }
+              }
+            </style>
+
+            {% include service-info.html %}
+
+          </div>
+          <div class="col-sm-12 col-md-3 col-lg-4">
+            {% include sidebar.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include footer.html %}
+</div>
+
+{% include js.html %}
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+---
+layout: default
+title: "Happy Jekylling!"
+---
+
+<div class="page-wraper">
+
+  {% include header.html %}
+  
+  
+  <div class="page-content">
+
+    {% include home__slider.html %}
+    
+    <div class="section-full mobile-page-padding p-b50 square_shape2">
+        <div class="section-content">
+          <div class="Service-half-top p-t80 bg-dark bg-moving" style="background-image: url({{ "/assets/images/backgrounds/bg-6.png" | relative_url }});">
+              <div class="container">
+                <!-- TITLE START -->
+                <div class="section-head text-white">
+                    <div class="mt-separator-outer separator-left">
+                      <div class="mt-separator">
+                          <h2 class="text-white text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Our</span> Services</h2>
+                      </div>
+                    </div>
+                    <h3>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</h3>
+                </div>
+                <!-- TITLE END -->
+              </div>
+          </div>
+          <div class="services-half-bottom">
+            <div class="container">
+              <div class="row">
+                {% for service in site.data.services %}
+                <div class="col-lg-3 col-md-4 col-sm-6 m-b30">
+                  <style>
+                    .hover-shadow {
+                      box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .5);
+                    }
+                  </style>
+                  <div class="image-effect-one hover-shadow">
+                    <img src="https://dummyimage.com/400x600/000/fff" alt="{{ service.title | capitalize }}">
+                    <div class="figcaption">
+                        <h4>{{ service.title | capitalize }}</h4>
+                        <a href="{{ service.url | relative_url }}"><i class="link-plus bg-primary"></i></a>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}  
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="section-full mobile-page-padding p-tb80 overlay-wraper bg-cover bg-center" style="background-image:url(images/background/bg-1.jpg)">
+        <div class="overlay-main bg-primary opacity-07"></div>
+        <div class="container">
+          <div class="section-content">
+              <div class="call-us-section text-center">
+                <h4 class="m-b15">Let's work together</h4>
+                <h2 class="call-us-number m-b15 m-b0">(+291)-456-789-1234</h2>
+                <h4 class="call-us-address m-t0 m-b20">Street 4 ,45 New york City</h4>
+                <a href="#" class="site-button-secondry btn-effect bg-dark">Contact Us</a>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="section-full mobile-page-padding p-b50 square_shape2">
+      <div class="section-content">
+        <div class="Service-half-top p-t80 bg-dark" style="background-image: url({{ "/assets/images/backgrounds/bg-6.png" | relative_url }});">
+          <div class="container">
+            <!-- TITLE START -->
+            <div class="section-head text-white">
+                <div class="mt-separator-outer separator-left">
+                  <div class="mt-separator">
+                      <h2 class="text-white text-uppercase sep-line-one "><span class="font-weight-300 text-primary">Clients</span> Testimonials</h2>
+                  </div>
+                </div>
+                <h3>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</h3>
+            </div>
+            <!-- TITLE END -->
+          </div>
+        </div>
+        <div class="services-half-bottom">
+          <div class="container">
+            <div class="row">
+              {% for service in site.data.services %}
+              <div class="col-lg-6 col-md-6 col-sm-12 m-b30">
+                
+                <div class="testimonial-2 m-a30 hover-animation-1">
+                  <div class=" block-shadow bg-white p-a30">
+                      <div class="testimonial-detail clearfix">
+                        <div class="testimonial-pic radius shadow scale-in-center"><img src="https://dummyimage.com/100x100/000/fff" width="100" height="100" alt="Clients Testimonials"></div>
+                        <h4 class="testimonial-name m-b5">Shelly Johnson -</h4>
+                        <span class="testimonial-position">Business Person</span>
+                      </div>
+                      <div class="testimonial-text">
+                        <span class="fa fa-quote-right"></span>
+                        <p> Excellent Customer support!. The template itself is very ext ended. simply dummy text of the printing and industry. the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              
+              {% endfor %}  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+                    
+  </div>
+  
+  {% include footer.html %}
+
+  <!-- BUTTON TOP START -->
+  <button class="scroltop"><span class="fa fa-angle-up  relative" id="btn-vibrate"></span></button>
+</div>

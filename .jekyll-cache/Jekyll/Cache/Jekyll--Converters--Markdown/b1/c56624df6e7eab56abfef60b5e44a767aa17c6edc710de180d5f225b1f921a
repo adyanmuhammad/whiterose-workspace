@@ -1,0 +1,115 @@
+I"�<p class="lead">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non odio ullamcorper, dignissim ante sed, molestie eros. Sed hendrerit molestie ante. Morbi ullamcorper nunc sit amet lacus sodales, et mattis orci ultrices. Nulla at augue scelerisque, consequat mauris in, pharetra arcu. Praesent sed nisi vel leo dapibus venenatis. Integer feugiat mi massa, vel varius magna efficitur id. Aenean sodales neque et massa auctor maximus. Quisque lacinia lorem in enim cursus, eget vestibulum diam iaculis.
+</p>
+
+<p>Aenean interdum, dolor eget venenatis hendrerit, risus mi convallis mauris, in tempor turpis mauris non metus. Nullam viverra a libero ut pellentesque. Duis massa purus, interdum non sem in, hendrerit pellentesque magna. Vivamus sed accumsan ligula, vel tincidunt dolor. Nullam non varius mi. Nunc ac erat enim. Phasellus pellentesque tortor nisi, sed mattis eros pretium id. Curabitur tincidunt egestas viverra. Suspendisse semper nibh ut ipsum aliquet, eget accumsan mauris sagittis. In varius vel mauris porttitor elementum. Etiam iaculis risus in leo malesuada facilisis.</p>
+
+<p>&lt;img 
+  class=”img-responsive”
+  src=”/assets/images/services/repointing.webp” 
+  alt=”Repointing”
+  style=”margin-bottom: 2rem;”</p>
+<blockquote>
+
+</blockquote>
+
+<p>Sed mattis libero lorem, ut dapibus dui pretium malesuada. Nunc sit amet gravida est, egestas interdum lorem. Etiam eget commodo purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam consectetur dui sed lorem tincidunt, et consectetur elit mattis. Ut scelerisque rutrum porttitor. Donec vitae magna rhoncus sem blandit ornare. Etiam a purus vitae enim imperdiet auctor. Nulla maximus facilisis ligula, vitae lacinia sapien consequat quis. Aliquam lobortis, lacus ut blandit pulvinar, ex nulla tempus nisi, id aliquam nunc tellus quis nisi. Duis ut ante facilisis, pharetra ante eget, tempor purus.</p>
+
+<p>Sed neque tellus, varius eget cursus ut, suscipit ac neque. Donec at nunc eu orci porta varius ut eget leo. Nullam vel erat consequat orci mollis dapibus. In eget nisi sed ante elementum efficitur ut at est. Vestibulum sit amet diam lacinia, suscipit nibh eu, ornare arcu. Sed malesuada elit ornare, euismod lacus condimentum, sollicitudin ex. Donec eget suscipit felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque pharetra convallis eros, a hendrerit leo congue et. Nunc id sem lacinia, facilisis felis a, eleifend lorem.</p>
+
+<p>Integer viverra ex at faucibus placerat. Aliquam eu neque eu mi mollis consequat vel in elit. Praesent malesuada elit et odio gravida, ac feugiat felis convallis. Praesent ut arcu egestas, vehicula lacus non, cursus lectus. Curabitur et placerat sem, eget imperdiet augue. Curabitur molestie, augue in porta congue, ipsum ipsum tristique tortor, et aliquet lorem felis id tellus. Nunc ultrices ipsum vel urna mollis, eu convallis ex condimentum. Suspendisse potenti.</p>
+
+<style>
+  .col-sm-row-lg {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (min-width: 960px) {
+    .col-sm-row-lg {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+</style>
+
+<div style="
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #F5BF23;
+  border-radius: .25rem;
+">
+  <h4 style="color: white;">
+    <strong>Service Info</strong>
+  </h4>
+  <div class="col-sm-row-lg" style="justify-content: space-between;">
+    <div style="
+      flex: 0 1 32%;
+      padding: 1rem;
+      min-height: 2rem;
+      margin-bottom: 1rem;
+      background-color: white;
+      border-radius: .25rem;
+    ">
+      Price:<br />
+      <strong>&pound; 300 for Single, &pound; 750 for Double</strong>
+    </div>
+    <div style="
+      flex: 0 1 32%;
+      padding: 1rem;
+      min-height: 2rem;
+      margin-bottom: 1rem;
+      background-color: white;
+      border-radius: .25rem;
+    ">
+      Cleaning Hours:<br />
+      <strong>1 - 3 Hours</strong>
+    </div>
+    <div style="
+      flex: 0 1 32%;
+      padding: 1rem;
+      min-height: 2rem;
+      margin-bottom: 1rem;
+      background-color: white;
+      border-radius: .25rem;
+    ">
+      Number of Cleaners:<br />
+      <strong>1 - 2 Cleaners</strong>
+    </div>
+  </div>
+  <div class="col-sm-row-lg" style="justify-content: space-between;">
+    <div style="
+      flex: 0 1 32%;
+      padding: 1rem;
+      min-height: 2rem;
+      margin-bottom: 1rem;
+      background-color: white;
+      border-radius: .25rem;
+    ">
+      Visiting Hours:<br />
+      <strong>Mon - Sat, 8 AM - 7 PM</strong>
+    </div>
+    <div style="
+      flex: 0 1 32%;
+      padding: 1rem;
+      min-height: 2rem;
+      margin-bottom: 1rem;
+      background-color: white;
+      border-radius: .25rem;
+    ">
+      Contact:<br />
+      <strong>07856721738</strong>
+    </div>
+    <div style="
+      flex: 0 1 32%;
+      padding: 1rem;
+      min-height: 2rem;
+      margin-bottom: 1rem;
+      background-color: white;
+      border-radius: .25rem;
+    ">
+      Email:<br />
+      <strong>appylead@gmail.com</strong>
+    </div>
+  </div>
+</div>
+:ET
